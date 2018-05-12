@@ -284,6 +284,7 @@ img {
 .assignChoresWrapper {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .assignChoreButton {
@@ -353,8 +354,8 @@ img {
     .people,
     .chores,
     .assign {
-        height: 100vh;
-        width: 100vh;
+        height: 120px;
+        width: 120px;
     }
     .sideArrow {
         display: inherit;
@@ -420,8 +421,8 @@ img {
     .people,
     .chores,
     .assign {
-        height: 100vh;
-        width: 100vh;
+        height: 130px;
+        width: 130px;
         border: 10px solid white;
     }
     .peopleTitle,
