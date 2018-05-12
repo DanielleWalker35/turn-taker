@@ -13,11 +13,11 @@ function MainInputs(props) {
         <div className="homeWrapper">
             <header>Turn Taker</header>
             <div className="linkWrapper">
-                <Link className="homeLink people" to="/peopleInputs"><span className="directions">Enter People</span></Link>
+                <Link className="homeLink people" to="/peopleInputs"><div className="directions">Enter People</div></Link>
                 <p className="sideArrow">&#x279c;</p>
-                <Link className="homeLink chores" to="/choresInputs"><span className="directions">Enter Chores</span></Link>
+                <Link className="homeLink chores" to="/choresInputs"><div className="directions">Enter Chores</div></Link>
                 <p className="sideArrow">&#x279c;</p>
-                <Link className="homeLink assign" to="/assignedChores" onClick={handleClick}><span className="directions">Assign Chores</span></Link>
+                <Link className="homeLink assign" to="/assignedChores" onClick={handleClick}><div className="directions">Assign Chores</div></Link>
             </div>
         </div>
     )

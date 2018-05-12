@@ -60,10 +60,10 @@ header {
     text-decoration: none;
     color: black;
     border-radius: 12px;
-    /* margin: 2% 40% 2% 40%; */
     margin:5%;
     align-self: center;
     background-color: white;
+    z-index: 99;
 }
 
 .people,
@@ -112,7 +112,7 @@ header {
     /* Opera */
     -o-transform: rotate(90deg);
     /* Internet Explorer */
-    /* filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
 }
 
 .peopleInputsWrapper,
@@ -151,7 +151,6 @@ header {
     flex-direction: column;
     width: 60%;
     margin: auto;
-    /* font-family: Judson; */
 }
 
 input {
@@ -232,7 +231,6 @@ img {
 }
 
 .editButton {
-    /* margin-top: 8%; */
     width: 50px;
     font-family: Judson;
     font-size: 14px;
@@ -284,7 +282,6 @@ img {
 .assignChoresWrapper {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .assignChoreButton {
@@ -407,10 +404,17 @@ img {
         display: flex;
         flex-direction: row;
         align-items: space-between;
-        margin: 5% 1% 5% 1%;
+        margin: 2% 1% 2% 1%;
     }
     .assignedPerson {
         align-self: center;
+    }
+    .assignChoreButton{
+        padding:0%
+    }
+    .choreDescription{
+        margin-top:2%;
+        margin-bottom: 2%
     }
 }
 
@@ -515,11 +519,11 @@ img {
         font-size: 30px;
     }
     .crop {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
     .crop img {
-        height: 200px;
+        height: 150px;
     }
     .finishPeople,
     .finishChores {
@@ -530,7 +534,7 @@ img {
         font-size: 28px;
     }
     .assignedPerson {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
@@ -553,10 +557,10 @@ img {
         font-size: 40px;
     }
     h2 {
-        font-size: 70px;
+        font-size: 50px;
     }
     p {
-        font-size: 40px;
+        font-size: 20px;
     }
     .editButton {
         font-size: 30px;
@@ -564,15 +568,11 @@ img {
     .saveButton {
         font-size: 28px;
     }
-    /* .finishPeople,
-    .finishChores {
-        font-size: 40px;
-    } */
     .completedButton {
         width: 100px;
         height: 100px;
     }
     .assignedPerson {
-        font-size: 50px;
+        font-size: 30px;
     }
 }
