@@ -8,7 +8,7 @@ const peopleRouter = require("./routes/peopleRoutes.js");
 const choreRouter = require("./routes/choreRoutes.js");
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8090;
 
 //middleware
 app.use(bodyParser.json());

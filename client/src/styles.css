@@ -53,13 +53,16 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 15%;
 }
 
 .homeLink {
     text-decoration: none;
     color: black;
     border-radius: 12px;
-    margin: 4% 40% 4% 40%;
+    /* margin: 2% 40% 2% 40%; */
+    margin:5%;
+    align-self: center;
     background-color: white;
 }
 
@@ -78,6 +81,17 @@ header {
     background-image: url(./images/happy-icon-16027.png);
 }
 
+.directions {
+    display: none;
+    background-color: rgb(211, 211, 211);
+    border: 1px solid black;
+    font-family: Montserrat;
+}
+
+.people:hover .directions, .chores:hover .directions, .assign:hover .directions {
+    display: block;
+}
+
 .chores {
     background-image: url(./images/icons8-housekeeping-100.png);
 }
@@ -87,7 +101,18 @@ header {
 }
 
 .sideArrow {
-    display: none
+    font-size: 30px;
+    align-items: center;
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+    /* Firefox */
+    -moz-transform: rotate(90deg);
+    /* IE */
+    -ms-transform: rotate(90deg);
+    /* Opera */
+    -o-transform: rotate(90deg);
+    /* Internet Explorer */
+    /* filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1); */
 }
 
 .peopleInputsWrapper,
@@ -331,10 +356,21 @@ img {
         height: 120px;
         width: 120px;
     }
-    .sideArrow{
+    .sideArrow {
         display: inherit;
-        font-size: 30px;
-        }
+        font-size: 60px;
+        align-self: center;
+        /* Safari */
+        -webkit-transform: none;
+        /* Firefox */
+        -moz-transform: none;
+        /* IE */
+        -ms-transform: none;
+        /* Opera */
+        -o-transform: none;
+        /* Internet Explorer */
+        filter: none;
+    }
     .linkWrapper {
         flex-direction: row;
         justify-content: space-evenly;
