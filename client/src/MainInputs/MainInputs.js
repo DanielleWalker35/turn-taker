@@ -14,8 +14,9 @@ function MainInputs(props) {
             <header>Turn Taker</header>
             <div className="linkWrapper">
                 <Link className="homeLink people" to="/peopleInputs"></Link>
-                <Link className="homeLink chores" to="/choresInputs">
-                </Link>
+                <p className="sideArrow">&#x2192;</p>
+                <Link className="homeLink chores" to="/choresInputs"></Link>
+                <p className="sideArrow">&#x2192;</p>
                 <Link className="homeLink assign" to="/assignedChores" onClick={handleClick}></Link>
             </div>
         </div>

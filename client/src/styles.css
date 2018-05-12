@@ -48,11 +48,13 @@ header {
     padding: 10% 3% 10% 3%;
     font-weight: 800
 }
-.linkWrapper{
+
+.linkWrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .homeLink {
     text-decoration: none;
     color: black;
@@ -60,22 +62,32 @@ header {
     margin: 4% 40% 4% 40%;
     background-color: white;
 }
-.people, .chores, .assign{
+
+.people,
+.chores,
+.assign {
     background-size: contain;
     background-repeat: no-repeat;
     height: 100px;
     width: 100px;
-    border: 6px solid white;  
+    border: 6px solid white;
     align-items: center;
 }
+
 .people {
     background-image: url(./images/happy-icon-16027.png);
 }
+
 .chores {
     background-image: url(./images/icons8-housekeeping-100.png);
 }
+
 .assign {
     background-image: url(./images/cleaner-svgrepo-com.svg);
+}
+
+.sideArrow {
+    display: none
 }
 
 .peopleInputsWrapper,
@@ -137,7 +149,6 @@ img {
     height: 100px;
     overflow: hidden;
     border-radius: 50%;
-
 }
 
 .crop img {
@@ -314,23 +325,29 @@ img {
         padding: 5% 3% 5% 3%;
         font-size: 90px;
     }
-    .people, .chores, .assign{
+    .people,
+    .chores,
+    .assign {
         height: 120px;
-        width: 120px; 
+        width: 120px;
     }
-    .linkWrapper{
+    .sideArrow{
+        display: inherit;
+        font-size: 30px;
+        }
+    .linkWrapper {
         flex-direction: row;
         justify-content: space-evenly;
         width: 100%;
     }
-    .people{
-        margin:0%;
+    .people {
+        margin: 0%;
     }
-    .chores{
-        margin:0%;
+    .chores {
+        margin: 0%;
     }
-    .assign{
-        margin:0%;
+    .assign {
+        margin: 0%;
     }
     .inputForm {
         width: 40%
@@ -364,10 +381,12 @@ img {
     header {
         font-size: 100px;
     }
-    .people, .chores, .assign{
+    .people,
+    .chores,
+    .assign {
         height: 130px;
         width: 130px;
-        border: 10px solid white;  
+        border: 10px solid white;
     }
     .peopleTitle,
     .choreTitle {
@@ -449,9 +468,11 @@ img {
     .homeLink {
         padding: 1%;
     }
-    .people, .chores, .assign{
+    .people,
+    .chores,
+    .assign {
         height: 150px;
-        width: 150px; 
+        width: 150px;
     }
     .submitButton {
         font-size: 30px;
@@ -480,9 +501,11 @@ img {
     header {
         font-size: 140px;
     }
-    .people, .chores, .assign{
+    .people,
+    .chores,
+    .assign {
         height: 175px;
-        width: 175px; 
+        width: 175px;
     }
     .peopleTitle,
     .choreTitle {
