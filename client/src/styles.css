@@ -23,6 +23,10 @@
     src: url(./fonts/Montserrat-Bold.ttf);
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .loading {
     background-color: white;
     width: 100%;
@@ -60,7 +64,7 @@ header {
     text-decoration: none;
     color: black;
     border-radius: 12px;
-    margin:5%;
+    margin: 5%;
     align-self: center;
     background-color: white;
     z-index: 99;
@@ -88,7 +92,9 @@ header {
     font-family: Montserrat;
 }
 
-.people:hover .directions, .chores:hover .directions, .assign:hover .directions {
+.people:hover .directions,
+.chores:hover .directions,
+.assign:hover .directions {
     display: block;
 }
 
@@ -409,11 +415,11 @@ img {
     .assignedPerson {
         align-self: center;
     }
-    .assignChoreButton{
-        padding:0%
+    .assignChoreButton {
+        padding: 0%
     }
-    .choreDescription{
-        margin-top:2%;
+    .choreDescription {
+        margin-top: 2%;
         margin-bottom: 2%
     }
 }
