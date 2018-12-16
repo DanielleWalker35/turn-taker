@@ -27,7 +27,6 @@ choreRouter.route("/reset")
             if (err) return res.send(err);
         })
         ChoreModel.updateMany({}, { $set: { assignedTo: null } }, (err, updatedChores) => {
-            console.log(updatedChores)
             if (err) return res.send(err);
             res.status(200).send(updatedChores);
         })
@@ -52,7 +51,6 @@ choreRouter.route("/:id")
         ChoreModel.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
             .populate("assignedTo")
             .exec((err, updatedChore) => {
-                console.log(updatedChore);
                 if (err) return res.send(err);
                 if (!updatedChore) return res.status(404).send({ message: "Chore not found." });
                 res.status(200).send(updatedChore);

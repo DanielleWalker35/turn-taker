@@ -35,7 +35,6 @@ class ChoresInputs extends Component {
         })
     }
     handleSubmit(event) {
-        console.log(this.state.inputs);
         event.preventDefault();
         this.props.addChore(this.state.inputs);
         this.setState(this.initialState)

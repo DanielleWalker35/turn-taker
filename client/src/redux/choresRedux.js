@@ -84,7 +84,6 @@ export const getChores = () => {
     }
 }
 export const addChore = (newChore) => {
-    console.log(newChore);
     return dispatch => {
         axios.post("/api/chores", newChore)
             .then(response => {
@@ -108,7 +107,6 @@ export const editChore = (editedChore, id) => {
     }
 }
 export const deleteChore = (id) => {
-    console.log(id);
     return dispatch => {
         axios.delete("/api/chores/" + id)
             .then(response => {
@@ -143,7 +141,6 @@ export const clearAssignments = () => {
     return dispatch => {
         axios.put("/api/chores/reset")
             .then(response => {
-                console.log(response.data)
                 dispatch({
                     type: "CLEAR_ASSIGNMENTS",
                 })

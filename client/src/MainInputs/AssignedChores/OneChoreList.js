@@ -16,7 +16,6 @@ class OneChoreList extends Component {
         })
     }
     handleClickClose(event) {
-        console.log(event.target);
         if (event.target.classList.contains("completedButton")) return;
         this.setState({
             showFireworks: false

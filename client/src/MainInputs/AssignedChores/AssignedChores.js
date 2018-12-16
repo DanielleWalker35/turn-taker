@@ -20,10 +20,11 @@ class AssignedChores extends Component {
         let currentId = "";
         let currentAssignedNum = 0;
         function assignChore(arr1, ageLevel) {
-            let oldEnough = arr1.filter(user => user.age >= ageLevel)
-            // console.log(oldEnough);
-            let byAssignedCount = oldEnough.sort((left, right) => left.assigned > right.assigned)
-            // console.log(byAssignedCount);
+            console.log("arr:", arr1, "age Level:", ageLevel);
+            let oldEnough = arr1.filter(user => user.age >= ageLevel);
+            console.log("old enough: ", oldEnough);
+            let byAssignedCount = oldEnough.sort((left, right) => left.assigned - right.assigned)
+            console.log("by addisnge count", byAssignedCount);
             currentId = byAssignedCount[0]._id;
             currentAssignedNum = byAssignedCount[0].assigned + 1;
 

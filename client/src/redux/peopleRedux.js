@@ -74,7 +74,6 @@ export const getPeople = () => {
     }
 }
 export const addPerson = (newPerson) => {
-    console.log(newPerson);
     return dispatch => {
         axios.post("/api/people", newPerson)
             .then(response => {
@@ -98,7 +97,6 @@ export const editPerson = (editedPerson, id) => {
     }
 }
 export const deletePerson = (id) => {
-    console.log(id);
     return dispatch => {
         axios.delete("/api/people/" + id)
             .then(response => {
